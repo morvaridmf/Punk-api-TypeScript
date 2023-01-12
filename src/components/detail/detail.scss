@@ -1,0 +1,61 @@
+@import "../../global.scss";
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColorDark;
+
+    .detail-nav {
+        overflow: hidden;
+        height: 50px;
+        width: 80vw;
+        border-bottom: 1px solid $blue;
+
+
+        a {
+            color: $font;
+            margin-left: 30px;
+            text-decoration: none;
+            font-size: small;
+
+
+        }
+
+    }
+
+    .detail-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        border: 1px solid white;
+        margin-top: 20px;
+        width: 60vw;
+        background-color: $backgroundColor;
+        border-radius: 10px;
+        padding: 20px;
+
+
+        span {
+            font-size: large;
+            font-weight: 600;
+            color: $Purple;
+        }
+
+        h4 {
+            font-size: large;
+            font-weight: 600;
+            color: $Purple;
+        }
+
+        h5 {
+            font-size: large;
+            font-weight: 400;
+            color: $Purple;
+
+
+        }
+    }
+}

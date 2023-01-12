@@ -1,0 +1,12 @@
+@import "./global.scss";
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    height: 100vh;
+    background-color: $backgroundColorDark;
+}
