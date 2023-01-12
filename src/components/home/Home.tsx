@@ -31,21 +31,22 @@ function Home() {
                 {loading ? (<h1>Loading....</h1>) : (
                     <div className='section'>
 
-                        {currentBeers.length > 0 && currentBeers.filter(beer => beer.name.toLowerCase().includes(search)).map(beer => (
-                            <Link to={`/detail/${beer.id}`}>
-                                <div key={beer.id} className="card">
-                                    <div className='card-text'>
-                                        <h4>{beer.name}</h4>
-                                        <p>{beer.tagline}</p>
-                                        <p>ABV: {beer.abv}</p>
-                                    </div>
-                                    <div className='card-image'>
-                                        <img src={beer.image_url} />
-                                    </div>
+                        {currentBeers.length > 0 && currentBeers.filter(beer =>
+                            beer.name.toLowerCase().includes(search)).map(beer => (
+                                <Link to={`/detail/${beer.id}`} >
+                                    <div key={beer.id} className="card">
+                                        <div className='card-text'>
+                                            <h4>{beer.name}</h4>
+                                            <p>{beer.tagline}</p>
+                                            <p>ABV: {beer.abv}</p>
+                                        </div>
+                                        <div className='card-image'>
+                                            <img src={beer.image_url} />
+                                        </div>
 
-                                </div>
-                            </Link>
-                        ))
+                                    </div>
+                                </Link>
+                            ))
                         }
                     </div>
                 )}

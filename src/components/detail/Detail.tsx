@@ -17,7 +17,7 @@ function Details() {
         <div className="detail">
             <nav className="detail-nav">
                 <Link to={"/"}>
-                    <AiOutlineRollback size="35" />
+                    <AiOutlineRollback fontSize="35px" />
                 </Link>
             </nav>
             <div className="detail-card">

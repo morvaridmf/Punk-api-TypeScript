@@ -14,12 +14,21 @@
             padding: 2px 5px;
             margin-right: 3px;
 
+            @include mobile {
+                padding: 1px 5px;
+                margin-bottom: 10px;
+            }
+
 
 
             a {
                 text-decoration: none;
                 font-size: larger;
                 color: $fontDark;
+
+                @include mobile {
+                    font-size: 12px;
+                }
 
             }
         }

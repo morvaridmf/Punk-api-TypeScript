@@ -13,10 +13,18 @@
         width: 80vw;
         border-bottom: 1px solid $blue;
 
+        @include mobile {
+            height: 50px;
+        }
+
         h2 {
             color: $font;
             margin-top: 20px;
             margin-left: 30px;
+
+            @include mobile {
+                font-size: 18px;
+            }
         }
     }
 
@@ -29,9 +37,18 @@
         margin-top: 30px;
         margin-bottom: 20px;
 
+        @include mobile {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
         h1 {
             margin-bottom: 20px;
             color: $font;
+
+            @include mobile {
+                font-size: 30px;
+            }
         }
 
         input {
@@ -40,6 +57,11 @@
             background-color: white;
             padding: 10px;
             border: none;
+
+            @include mobile {
+                width: 300px;
+                padding: 8px;
+            }
         }
     }
 
@@ -73,7 +95,12 @@
                 align-content: center;
                 flex-wrap: wrap;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: space-between;
+
+                @include mobile {
+                    width: 40vw;
+                    height: 190px;
+                }
 
 
 
@@ -93,6 +120,10 @@
                         margin-bottom: 15px;
                         font-weight: 800;
                         color: $Purple;
+
+                        @include mobile {
+                            font-size: 14px;
+                        }
                     }
 
                     p {
@@ -115,6 +146,10 @@
 
                     img {
                         height: 130px;
+
+                        @include mobile {
+                            height: 110px;
+                        }
                     }
                 }
 

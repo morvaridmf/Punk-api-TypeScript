@@ -37,17 +37,34 @@
         border-radius: 10px;
         padding: 20px;
 
+        p {
+
+            @include mobile {
+                font-size: 13px;
+            }
+        }
 
         span {
             font-size: large;
             font-weight: 600;
             color: $Purple;
+
+            @include mobile {
+                font-size: 15px;
+            }
+        }
+
+        h3 {
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         h4 {
             font-size: large;
             font-weight: 600;
             color: $Purple;
+
         }
 
         h5 {
